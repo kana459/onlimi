@@ -37,7 +37,7 @@ $(function(){
 
 $(function(){
    // #で始まるアンカーをクリックした場合に処理
-   $('a[href^=#]').click(function() {
+   $('a[href^="#"]').click(function() {
       // スクロールの速度
       let speed = 400; // ミリ秒
       // アンカーの値取得
@@ -55,12 +55,12 @@ $(function(){
 
 $(function () {
   function end_loader() {
-    $('.logo-circle').fadeOut(800);
+    $('.logo-circle').fadeOut(300);
   }
   $(window).on('load', function () {
     setTimeout(function () {
       end_loader();
-    }, 4000)
+    }, 2000)
   })
 })
 
